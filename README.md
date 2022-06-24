@@ -3,7 +3,7 @@
 
 ## Background
 
-This project creates an algorithmic trading bot that learns and adapts to new data and evolving markets for a financial advisory firm. Seeking to maintain an advantage over the competition improvements need to made to the existing algorithmic trading system. The plan is to enhance the current trading signals with machine learning algorithms in Python programming to adapt to new data under differing market environments. 
+This project creates an algorithmic trading bot that learns and adapts to new data and evolving markets for a financial advisory firm. Seeking to maintain an advantage over the competition, initiatives are taken to make improvements to the existing algorithmic trading system. The plan is to enhance the current trading signals by testing different classified machine learning (ML) algorithms in a Python notebook. By testing different classified MLs, performance can be compared to adaptation of new data under differing market environments. 
 
 to construct a binary classification model to make predictions for funding successful business ventures. In order to construct a NN model, Tensorflow and Keras are used from the python library to build a NN deep learning program employing algorithms. Using an algorithm optimizer function to shape the NN on trained data, it molds a model that reduces losses in order to make more accurate predictions. This NN is compiled to test different parameters and then evaluate its binary classification model accuracy which predicts successful startups.   
 
