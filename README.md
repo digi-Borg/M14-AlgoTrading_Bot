@@ -1,39 +1,41 @@
-# Mod14-AlgoTrading_Bot
+# Mod14-AlgoTrading_Bot 
+
+![M14TitleIllus](Images/M14ReadMe_2022-06-26010033.png)
+
 *"Using a MachineLearning Algorithmic Trading Bot that adapts to new data and evolving markets."* 
 
 ## Background
 
 This project creates an algorithmic trading bot that learns and adapts to new data and evolving markets for a financial advisory firm. Seeking to maintain an advantage over the competition, initiatives are taken to make improvements to the existing algorithmic trading system. The plan is to enhance the current trading signals by testing different classified machine learning (ML) algorithms in a Python notebook. By testing different classified MLs, performance can be compared to adaptation of new data under differing market environments. 
 
-to construct a binary classification model to make predictions for funding successful business ventures. In order to construct a NN model, Tensorflow and Keras are used from the python library to build a NN deep learning program employing algorithms. Using an algorithm optimizer function to shape the NN on trained data, it molds a model that reduces losses in order to make more accurate predictions. This NN is compiled to test different parameters and then evaluate its binary classification model accuracy which predicts successful startups.   
+The FinTech technology in this program utilizes ScikitLearn ML algorithm software tools. The tools are used to build algorithmic models by adjusting inputs for buy, sell or hold signals; these signals are derived from a technical indicator called simple moving average(SMA). SMA's calculate the average stock prices over a rolling time period designating a number of days in time windows. 
 
-With the exponential growth of novel technology discoveries to make a better world, many new innovations are being forged into implementation by startup companies to apply their discoveries in several industries. Applying these innovations requires capital funding to execute production for public utility. Most funding comes from private investors and venture capital(VC) firms willing to risk capital on novel unproven ideas for respective industry markets. To mitigate investment losses a financial application model is utilized to preprocess data for a NN, then compile it, train it, evaluate it and then optimize the NN model. The optimization process seeks to improve the model's accuracy score and lower the loss calculation. Using Keras, the NN models parameters, layer configuration, input weights, activation functions and evaluation metrics are saved in a Hierarchical DataFormat HDF5Links to an external site file for future analysis and reference.   
+Using the pandas rolling function with the `window` parameter the time can be specified and adjusted from days to minutes depending on your trading strategies. A short-window(usually 10, 20, 50 days) and long-window(usually 100,200 days) are designated to illustrate positive or negative price trends. When looking at a chart for example, the short window 20 day SMA crosses over the long-window 100 day SMA a trigger point to enter or exit a trade. These SMA crossover points known as dual-moving-average-crossover(DMAC) signal buys or sells by our algorithm model.  
 
-The FinTech app technology in this program utilizes TensorFlow's open source platform for machine learning that allows code to run across platforms more efficiently. And Keras (the deep learning framework) from the Python library serves as an abstract of TensorFlow to simplify the coding process. This allows more time to focus on tuning the optimization of NN models and evaluating them to solve business problems. The purpose of using deep learning NN models in this case is to experiment with several algorithms models and test the performance of binary classification outcomes. In this case, we are looking for increasing probability of investing in successful start-ups, while minimizing capital risk in the predictions.   
+Adjusting the ML algorithm inputs one can put together models, tune them, visualize performance on charts, and backtest them for evaluation on a Classification Report. Additionaly, other classes of ML models are available for backtesting and predicting outcomes before applying them to your strategies.  
 
-A successful VC firm that mitigates capital risk is more aptly able to raise greater investor interest and increase the amount of funding to ensure more successful startups. 
 
 ---
 ## Evaluation Results
 
-The following evaluation describes the performance test of the imported models, with the loss and accuracy metric scores of all four neural network machine learning models. To analyze and conclude a model’s performance as it progresses through more epochs, its accuracy should increaase toward 1, and its loss should decrease toward 0.
+The following evaluation describes the performance test of the imported models, with the loss and accuracy metric scores of all algorithm machine learning models. To analyze and conclude each model’s performance it's Cumulative Returns chart is visualized and Classifier Report are evaluated. 
 
-* NN Original Model: 
+* SVC Original Model: 
   * Original nn features: 2 hiddenlayers 'relu', with 50 epochs
   * Original nn Model Accuracy: 0.7289
   * Original nn Model Loss: 0.5561     
   
-* NN Alternative Model 1 Results:
+* LogisticRegression Model Results:
   * nn_Al features: 1 hiddenlayer 'relu', with 50 epochs       
   * nn_Al Accuracy: 0.7310
   * nn_Al Loss: 0.5590
 
-* NN Alternative Model 2 Results:
+* AdaBoostClassifier Model Results:
   * nn_A2 features: 1 hiddenlayer 'relu', with 100 epochs      
   * nn_A2 Accuracy: 0.7287
   * nn_A2 Loss: 0.5660 
 
-* NN Alternative Model 3 Results:
+* DecisionTreeClassifier Model Results:
   * nn_A3 features- 2 hiddenlayer 'relu' + 1 hiddenlayer 'tanh' , with 50 epochs       
   * nn_A3 Accuracy: 0.7296
   * nn_A3 Loss: 0.5508 
@@ -42,42 +44,45 @@ The following evaluation describes the performance test of the imported models, 
 
 ## Technologies
 
-The software operates on python 3.9 with the installation package imports embedded with Anaconda3 installation. Pandas and scikitlearn are imported libraries for this program. Additional application tools that you need for this module include TensorFlow 2.0 library that should already be installed in the default Conda environmentand. Keras is the popular deep learning framework that serves as a high-level API for TensorFlow 2.0. Pleaase reference the latest official [TensorFlow Install Guide](https://www.tensorflow.org/install/pip) to troubleshoot issues.   
+The software operates on python 3.9 with the installation package imports embedded with Anaconda3 installation. Pandas, NumPy, hvplot, Matplotlib and scikitlearn are libraries for imported tools this program uses to build the program to analyze stock prices and set decision signals of when to buy and sell shares.  The application tools that you need for this module to construct models to perform ML algorithms are SVC, LogisticRegression, AdaBoostClassifier, DecisionTreeClassifier.  Please reference the formerly named ML algorithm classifiers on the official web site [Supervised Learning for scikit ML Classifiers Install Guide](https://scikit-learn.org/stable/supervised_learning.html) installation and documentation.   
 
-* [anaconda3](https://docs.anaconda.com/anaconda/install/windows/e) 
 
-* [sklearn](https://scikit-learn.org/stable/install.html) 
-
-* [TensorFlow](https://www.tensorflow.org/) 
-
-* [Keras](https://keras.io/getting_started/) . 
 ---
 
 ## Installation Guide
 
-Before running the applications first navigate to [TensorFlow](https://www.tensorflow.org/install/pip#windows) for installation instructions. Then verify if the installation as been completed. Using `python -c "import tensorflow as tf;print(tf.__version__)"`. Keras is included with TensorFlow 2.0 but still needs verification prior to use `python -c "import tensorflow as tf;print(tf.keras.__version__)"`The output should show version 2.2.4-tf or later. 
+Before running the applications open you terminal to install and check for your installations. First navigate to scikit-learn.org for installation instructions using the link below. Then verify if the installation as been completed. 
 
+* (https://www.python.org/downloads/)
+
+* [anaconda3](https://docs.anaconda.com/anaconda/install/windows/e) 
+
+* [scikitlearn](https://scikit-learn.org/stable/install.html) 
 
 ```python libraries
-pip install --upgrade tensorflow
-python3 -m pip install tensorflow
-from tensorflow import keras
+pip install -U scikit-learn
+python -m pip show scikit-learn      # to see which version of scikit-learn is installed
+conda install numpy
 ```
-```from pathlib import Path
-import pandas as pd
-import tensorflow as tf
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.models import Sequential
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler,OneHotEncoder 
+```import pandas as pd
+import numpy as np               # returns conditional classification values for signals
+from pathlib import Path
+import hvplot.pandas                                            # for chart visualations
+import matplotlib.pyplot as plt
+from sklearn import svm                                             # algorithm ML model
+from sklearn.preprocessing import StandardScaler         # standardizes data for models from pandas.tseries.offsets import DateOffset        # allows length of time adjustments
+from sklearn.metrics import classification_report 
+from sklearn.linear_model import LogisticRegression                 # algorithm ML model
+from sklearn.ensemble import AdaBoostClassifier                     # algorithm ML model
+from sklearn.tree import DecisionTreeClassifier                     # algorithm ML model
 ```
 
 ---
 # Usage
 
-This application is launched from web-based Jupyter notebook utilizing Pandas and scikitlearn `StandardScaler` to preprocess the data, along with `OneHotEncoder` to encode categorical variables for the NN model computations. TensorFlow's Keras `Sequential` framework sets the design of the NN layer structure so data can flow sequentially between each layer. It's `Dense`module allows additional NN layers to be added to the model framework. TensorFlow is used to compile a NN model using `binary_crossentropy` function,`adam` optimizer and `accuracy` evaluation metrics.    
+This application is launched from web-based Jupyter notebook utilizing Pandas and scikitlearn `StandardScaler` to preprocess data for categorical variables in the algorithm ML model computations. Scikit ML models SVC, LogisticRegression, AdaBoostClassifier, DecisionTreeClassifier allows tuning to adapt to different trading strategies and market environments.  and `accuracy` evaluation metrics.    
 
-The program is developed in Jupyter notebook on a jupyter **.ipny** file. The Python library makes it possible to utilize TensorFlow and Keras to build this NN deep learning machine algorithm. The design applies the model-fit-predict process to make a binary classification of whether a startup is successful or not.
+The program is developed in Jupyter notebook on a jupyter **.ipny** file. The Python library makes it possible to utilize pandas, numpy and pathlib to build this ML algorithm. The design applies the model-fit-predict process to make a binary classification of whether a startup is successful or not.
  
 
 ![NN Model Evals: Origin & A1](Images\Screenshot2022-06-15032835.png) 
@@ -87,7 +92,7 @@ The program is developed in Jupyter notebook on a jupyter **.ipny** file. The Py
 
 
 ```python
-venture_funding_with_deep_learning.ipynb
+machine_learning_trading_bot.ipynb
 ```
  
 
