@@ -1,4 +1,4 @@
-# Mod14-AlgoTrading_Bot 
+# M14-AlgoTrading_Bot 
 
 ![M14TitlePic](./Images/M14ReadMe_2020-0626010033.png) 
 
@@ -101,7 +101,7 @@ from sklearn.tree import DecisionTreeClassifier            # algorithm ML model
 
 This application is launched from web-based Jupyter notebook utilizing Pandas and scikitlearn `StandardScaler` to preprocess data for categorical variables in the ML algorithm model computations. Scikit ML models are tunable by adjusting input features to find parameters that result in the best outcomes for different trading strategies and adapt to market environments. While `classification_report` illustrates the evaluation metrics such as accuracy, precision and recall.    
 
-The program is developed in Jupyter notebook on a jupyter **.ipny** file. The Python library makes it possible to utilize pandas, numpy and pathlib to build this ML algorithm. The design applies the model-fit-predict process to make a binary classification of whether a startup is successful or not.
+The program is developed in Jupyter notebook and run in [`machine_learning_trading_bot.ipynb`](./machine_learning_trading_bot.ipynb) file. The Python library makes it possible to utilize pandas, numpy and pathlib to build this ML algorithm. The design applies the model-fit-predict process to make a binary classification of whether a startup is successful or not.
  
 
 ![Tune_SMAs](Images/Adjst-SMA_2022-06-26180534.png)
